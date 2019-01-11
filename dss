@@ -1,0 +1,6 @@
+#!/bin/bash
+#Deleting screenshots - ElementaryOS
+
+rm ~/Pictures/Screenshot* 2>/dev/null
+rm ~/Pictures/Screenshots/Screenshot* 2>/dev/null
+echo "Screenshots deletadas com sucesso."
