@@ -1,1 +1,1 @@
-# my_bash_scripts
+# My personal bash scripts
