@@ -1,2 +1,1 @@
-@daily bash ~/bin/backup_artigos
-@weekly bash ~/bin/backup_geral
+
