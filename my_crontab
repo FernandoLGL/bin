@@ -20,5 +20,5 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-*/30 * * * * bash ~/bin/backup_artigos
-0 * * * * bash ~/bin/backup_geral
+#*/30 * * * * bash ~/bin/backup_artigos
+#0 * * * * bash ~/bin/backup_geral
