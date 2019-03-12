@@ -1,5 +1,0 @@
-#!/bin/bash
-
-mkdir ~/my_anacron 2>/dev/null
-sudo cp -r /etc/cron.{daily,weekly,monthly} /etc/anacrontab ~/my_anacron 2>/dev/null
-
