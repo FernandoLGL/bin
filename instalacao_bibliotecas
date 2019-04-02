@@ -1,0 +1,13 @@
+#!/bin/bash
+conda install numpy
+conda install pandas
+conda install sqlalchemy
+conda install lxml
+conda install html5lib
+conda install BeautifulSoup4
+conda install matplotlib
+conda install seaborn
+conda install scikit-learn
+pip install --upgrade pandas pandas-datareader
+pip install dash
+pip install dash-daq
