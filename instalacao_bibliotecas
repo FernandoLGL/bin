@@ -9,5 +9,27 @@ conda install matplotlib
 conda install seaborn
 conda install scikit-learn
 pip install --upgrade pandas pandas-datareader
-pip install dash
-pip install dash-daq
+#pip install dash
+#pip install dash-daq
+
+#Big Data
+#sudo apt-get install openjdk-8-jdk #java
+sudo apt-get install scala
+pip install py4j
+#apos baixar o arquivo do spark
+#export SPARK_HOME='$HOME/spark-2.1.0...'
+#export PATH=$SPARK_HOME:$PATH
+#export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH
+#export PYSPARK_DRIVER_PYTHON="jupyter"
+#export PYSPARK_DRIVER_PYTHON_OPTS="notebook"
+#export PYSPARK_PYTHON=python
+#chmod 777 spark-2.4.3-bin-hadoop2.7
+#chmod 777 python #inside the above folder
+#chmod 777 pyspark #inside the above folder
+
+#if you only do the above, you will only be able to import pyspark from python folder
+#Do this to be able to do it from anywhere:
+pip install findspark
+#import findspark
+#findspark.init('/home/fernando/spark-2.4.3-bin-hadoop2.7') #pwd of spark
+#then it works to import pyspark
