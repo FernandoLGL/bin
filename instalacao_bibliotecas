@@ -33,3 +33,7 @@ pip install findspark
 #import findspark
 #findspark.init('/home/fernando/spark-2.4.3-bin-hadoop2.7') #pwd of spark
 #then it works to import pyspark
+
+#Compiladores
+conda install --channel=numba llvmlite
+conda install -c conda-forge rply
