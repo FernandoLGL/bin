@@ -14,8 +14,8 @@ pip install --upgrade pandas pandas-datareader
 
 #Big Data
 #sudo apt-get install openjdk-8-jdk #java
-sudo apt-get install scala
-pip install py4j
+#sudo apt-get install scala
+#pip install py4j
 #apos baixar o arquivo do spark
 #export SPARK_HOME='$HOME/spark-2.1.0...'
 #export PATH=$SPARK_HOME:$PATH
@@ -29,11 +29,16 @@ pip install py4j
 
 #if you only do the above, you will only be able to import pyspark from python folder
 #Do this to be able to do it from anywhere:
-pip install findspark
+#pip install findspark
+
+#e aí no código:
 #import findspark
 #findspark.init('/home/fernando/spark-2.4.3-bin-hadoop2.7') #pwd of spark
 #then it works to import pyspark
 
 #Compiladores
-conda install --channel=numba llvmlite
-conda install -c conda-forge rply
+#conda install --channel=numba llvmlite
+#conda install -c conda-forge rply
+
+#Pygame
+#conda install -cogsci pygame #no futuro pode mudar o canal. Checar no Anaconda Cloud
