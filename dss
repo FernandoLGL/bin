@@ -2,6 +2,6 @@
 
 #Deleting screenshots
 
-rm ~/Pictures/Screenshot* 2>/dev/null
-rm ~/Pictures/Screenshots/Screenshot* 2>/dev/null
+# -r because some screenshot software create folders for screenshots
+rm -rf ~/Pictures/Screenshot* 2>/dev/null
 echo "Screenshots deleted successfully"
