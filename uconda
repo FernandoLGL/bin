@@ -3,4 +3,4 @@
 conda update conda
 conda update anaconda
 
-#pode rodar ambos duas vezes. Um de cada vez, em sequência (conda depois anaconda)
+# You can run both twice; in sequence (conda then anaconda).

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Maybe it's that unfortunate time again when I have to write a paper
+
+mkdir ~/backups 2>/dev/null
+tar -czf ~/backups/backupPapers.tar.gz ~/Documents/Papers 2>/dev/null
+date >> ~/backups/backupPapers.log

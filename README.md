@@ -1,10 +1,3 @@
-# My personal bash scripts and crontab
+# My personal scripts. Not yours.
 
-To execute this you need to place in your PATH like so:
-
-In .bashrc:
-```
-PATH="scripts_source/:$PATH"
-```
-
-And be sure to ```chmod +x``` all of the scripts.
+But you can use them if you want, of course. You maniac.

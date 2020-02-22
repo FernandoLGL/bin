@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Everything that matters; not really a complete backup. I lied.
+
+mkdir ~/backups 2>/dev/null
+tar -czf ~/backups/completeBackup.tar.gz ~/{Documents,Downloads,Desktop,Pictures,Videos} 2>/dev/null
+date >> ~/backups/completeBackup.log
