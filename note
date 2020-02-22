@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+import os
+import sys
+import subprocess
+from datetime import datetime
+
+if not os.path.isdir("~/notes"):
+    subprocess.call('mkdir ~/notes 2>/dev/null', shell=True)
+
+inputArguments = ' '.join(sys.argv[1:])
+
+today = datetime.today()
+
+home = os.path.expanduser('~')
+
+notePath = f"{home}/notes/{today.day}-{today.month}-{today.year}@{today.hour}:{today.minute}:{today.second}"
+
+f = open(notePath, "w+")
+
+f.write(f'{inputArguments}\n')
+
+print(f"Note saved at {notePath}")
+
+f.close()
