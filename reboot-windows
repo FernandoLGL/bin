@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Simple program that reboots directly to Windows; eliminating the need of pressing any
+# buttons at startup to select boot partition.
+
+# obviously you need to change "grep Hard" to the appropriate name showed that points to
+# where windows is installed
+sudo efibootmgr --bootnext $(efibootmgr | grep Hard | tail -n1 | cut -d' ' -f1 | cut -d't' -f2 | sed s/.$//) && reboot
