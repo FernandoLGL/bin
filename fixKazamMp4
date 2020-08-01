@@ -1,0 +1,6 @@
+#!/bin/bash
+
+TOBEFIXED=$1
+FIXEDNAME=$2
+
+ffmpeg -y -i $TOBEFIXED -c:v libx264 -c:a aac -strict experimental -tune fastdecode -pix_fmt yuv420p -b:a 192k -ar 48000 $FIXEDNAME
