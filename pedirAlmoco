@@ -1,0 +1,33 @@
+#!/home/fran/anaconda3/bin/python
+
+import sys
+import subprocess
+
+numeroDePedidos = int(input("Vão ser quantos pedidos? "))
+
+pedidos = []
+
+for num in range(numeroDePedidos):
+    pedido = input("Qual o pedido número " + str((num+1)) + "? ")
+    pedidos.append(pedido)
+
+header = ""
+
+if (numeroDePedidos > 1):
+    header = f"Bom dia! Hoje serão {numeroDePedidos} pratos:\n\n"
+else:
+    header = f"Bom dia! Hoje será apenas um prato:\n\n"
+
+pedidoCompleto = header
+
+for num in range(numeroDePedidos):
+    pedidoCompleto += str((num+1)) + ") " + pedidos[num] + "\n\n"
+
+if(numeroDePedidos == 1):
+    pedidoCompleto += "De 350g para 11h30m se possível"
+elif(numeroDePedidos == 2):
+    pedidoCompleto += "Ambos de 350g para 11h30m se possível"
+else:
+    pedidoCompleto += "Todos de 350g para 11h30m se possível"
+
+subprocess.run(f'echo "{pedidoCompleto}" | xclip -selection clipboard', shell=True)
